@@ -624,6 +624,11 @@ public abstract class Tree {
     	}
     }
 
+    /**
+     * An "if E1 : S1 ||| E2 : S2 ||| ... ||| En : Sn fi" or
+     * "do E1 : S1 ||| E2 : S2 ||| ... ||| En : Sn od"
+     * block
+     */
     public static class GuardClause extends Tree {
         Expr condition;
         Tree trueBranch;
